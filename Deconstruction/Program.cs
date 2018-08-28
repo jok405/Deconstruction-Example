@@ -33,5 +33,12 @@ namespace Deconstruction
             return (1, 35, 40);
         }
         public void Run2()
+        {
+            int hour;
+            int minutes;
+            int seconds;
+            (hour, minutes, seconds) = GetTime();
+            WriteLine($"The time using local variables: {hour}:{minutes}:{seconds}");
+        }
     }
 }
